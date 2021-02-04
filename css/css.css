@@ -1,0 +1,125 @@
+.first{
+	width: 100vw;
+	/*height: 100vh;*/
+	position: relative;
+}
+.backdropstar{
+	width: 100vw;
+	height: 100vh;
+	background-color: blue;
+}
+.text-tips{
+	position: absolute;
+	left: 50px;
+	right: 60px;
+	top: 100px;
+}
+.words{
+	width: 100%;
+	height: 100%;
+}
+.moonbox{
+	width: 160px;
+	height: 175px;
+	position: absolute;
+	left: 130px;
+	top: 550px;
+}
+.moon{
+	width: 100%;
+	height: 100%;
+}
+.fakemoonbutton{
+	width: 160px;
+	height: 175px;
+	position: absolute;
+	left: 130px;
+	top: 550px;
+	z-index: 1;
+}
+.bac-mountain {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.mountain{
+	width: 100%;
+	height: 100%;
+}
+.mountain2{
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.second{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.yindao{
+	max-width: 300px;
+	height: auto;
+	position: absolute;
+	top: 70px;
+	left: 50px;
+}
+.zhaung{
+	max-width: 48px;
+	height: auto;
+	position: absolute;
+	top: 170px;
+	left: 100px;
+}
+.guang{
+	max-width: 50px;
+	height: auto;
+	position: absolute;
+	top: 150px;
+	left: 210px;
+}
+.ni{
+	max-width: 50px;
+	height: auto;
+	position: absolute;
+	top: 230px;
+	right: 40px;
+}
+.mei{
+	max-width: 50px;
+	height: auto;
+	position: absolute;
+	top: 300px;
+	left: 50px;
+}
+.shen{
+	max-width: 55px;
+	height: auto;
+	position: absolute;
+	top: 320px;
+	left: 180px;
+}
+.yue{
+	max-width: 40px;
+	height: auto;
+	position: absolute;
+	top: 450px;
+	left: 90px;
+}
+.xiao{
+	max-width: 37px;
+	height: auto;
+	position: absolute;
+	top: 490px;
+	left: 200px;
+}
+.played{
+	display: none;
+}
+.play{
+	display: block;
+}
