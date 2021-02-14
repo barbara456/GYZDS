@@ -1,125 +1,297 @@
-.first{
-	width: 100vw;
-	/*height: 100vh;*/
-	position: relative;
+.first {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    opacity: 1;
+    display: none;
 }
-.backdropstar{
-	width: 100vw;
-	height: 100vh;
-	background-color: blue;
+
+.backdropstar {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient( #1e2d59, #192e79, #0069aa);
 }
-.text-tips{
-	position: absolute;
-	left: 50px;
-	right: 60px;
-	top: 100px;
+
+.text-tips {
+    position: absolute;
+    left: 50px;
+    right: 60px;
+    top: 100px;
 }
-.words{
-	width: 100%;
-	height: 100%;
+
+.words {
+    width: 100%;
+    height: 100%;
 }
-.moonbox{
-	width: 160px;
-	height: 175px;
-	position: absolute;
-	left: 130px;
-	top: 550px;
+
+.moonbox {
+    width: 160px;
+    height: 175px;
+    position: absolute;
+    left: 130px;
+    top: 550px;
 }
-.moon{
-	width: 100%;
-	height: 100%;
+
+.moon {
+    width: 100%;
+    height: 100%;
 }
-.fakemoonbutton{
-	width: 160px;
-	height: 175px;
-	position: absolute;
-	left: 130px;
-	top: 550px;
-	z-index: 1;
+
+.fakemoonbutton {
+    width: 160px;
+    height: 175px;
+    position: absolute;
+    left: 130px;
+    top: 550px;
+    z-index: 1;
 }
+
 .bac-mountain {
-	position: absolute;
-	left: 0;
-	bottom: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
 }
-.mountain{
-	width: 100%;
-	height: 100%;
+
+.mountain {
+    width: 100%;
+    height: 100%;
 }
-.mountain2{
-	max-width: 100%;
-	max-height: 100%;
-	position: absolute;
-	left: 0;
-	bottom: 0;
+
+.mountain2 {
+    max-width: 100%;
+    max-height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
-.second{
-	width: 100vw;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: none;
+
+.second {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
 }
-.yindao{
-	max-width: 300px;
-	height: auto;
-	position: absolute;
-	top: 70px;
-	left: 50px;
+
+.yindao {
+    max-width: 300px;
+    height: auto;
+    position: absolute;
+    top: 70px;
+    left: 50px;
 }
-.zhaung{
-	max-width: 48px;
-	height: auto;
-	position: absolute;
-	top: 170px;
-	left: 100px;
+
+.zhaung {
+    max-width: 48px;
+    height: auto;
+    position: absolute;
+    top: 170px;
+    left: 100px;
 }
-.guang{
-	max-width: 50px;
-	height: auto;
-	position: absolute;
-	top: 150px;
-	left: 210px;
+
+.guang {
+    max-width: 50px;
+    height: auto;
+    position: absolute;
+    top: 150px;
+    left: 210px;
 }
-.ni{
-	max-width: 50px;
-	height: auto;
-	position: absolute;
-	top: 230px;
-	right: 40px;
+
+.ni {
+    max-width: 50px;
+    height: auto;
+    position: absolute;
+    top: 230px;
+    right: 40px;
 }
-.mei{
-	max-width: 50px;
-	height: auto;
-	position: absolute;
-	top: 300px;
-	left: 50px;
+
+.mei {
+    max-width: 50px;
+    height: auto;
+    position: absolute;
+    top: 300px;
+    left: 50px;
 }
-.shen{
-	max-width: 55px;
-	height: auto;
-	position: absolute;
-	top: 320px;
-	left: 180px;
+
+.shen {
+    max-width: 55px;
+    height: auto;
+    position: absolute;
+    top: 320px;
+    left: 180px;
 }
-.yue{
-	max-width: 40px;
-	height: auto;
-	position: absolute;
-	top: 450px;
-	left: 90px;
+
+.yue {
+    max-width: 40px;
+    height: auto;
+    position: absolute;
+    top: 450px;
+    left: 90px;
 }
-.xiao{
-	max-width: 37px;
-	height: auto;
-	position: absolute;
-	top: 490px;
-	left: 200px;
+
+.xiao {
+    max-width: 37px;
+    height: auto;
+    position: absolute;
+    top: 490px;
+    left: 200px;
 }
-.played{
-	display: none;
+
+.played {
+    display: none;
 }
-.play{
-	display: block;
+
+.play {
+    display: block;
+}
+
+.tiandengUnit {
+    /* display: block; */
+    opacity: 0;
+}
+
+.tiandeng {
+    width: 22%;
+    height: auto;
+    position: absolute;
+    right: 12%;
+    bottom: 36%;
+}
+
+.tiandengwords {
+    width: 30.1%;
+    position: absolute;
+    right: 7%;
+    bottom: 32%;
+}
+
+.tiandenghand {
+    height: 8%;
+    position: absolute;
+    right: 10%;
+    bottom: 25%;
+    z-index: 1;
+}
+
+@keyframes tiandengup {
+    from {
+        transform: translateY(10%);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-180%);
+        opacity: 0;
+    }
+}
+
+@keyframes tiandenghandmove {
+    from {
+        transform: translateX(10%);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-180%);
+        opacity: 0;
+    }
+}
+
+.tiandenghandmove {
+    height: 8%;
+    position: absolute;
+    right: 10%;
+    bottom: 25%;
+    z-index: 1;
+    animation: 3s ease-out infinite tiandenghandmove;
+}
+
+.third {
+    width: 100vw;
+    height: 100vh;
+    background-color: #23254E;
+    /* opacity: 0; */
+    /* display: none; */
+}
+
+.polaris {
+    width: 143px;
+    height: 185px;
+    position: absolute;
+    left: 5%;
+    top: 0;
+}
+
+.clickstarthand {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    left: 9%;
+    top: 17%;
+}
+
+.star {
+    width: 85vw;
+    height: auto;
+    position: absolute;
+    top: 28%;
+    left: 8%;
+}
+
+.polarishand {
+    display: none;
+}
+
+.bianqing {
+    width: 45%;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+.xun {
+    width: 13%;
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+
+.sheng {
+    width: 25%;
+    position: absolute;
+    top: 48%;
+    right: 5%;
+}
+
+.konghou {
+    width: 19%;
+    position: absolute;
+    top: 40%;
+    left: 48%;
+}
+
+.guqin {
+    width: 9%;
+    position: absolute;
+    top: 55%;
+    left: 33%;
+}
+
+.ruan {
+    width: 20%;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+}
+
+.dizi {
+    width: 30%;
+    position: absolute;
+    bottom: 1%;
+    left: 5%;
+}
+
+.yueqistar {
+    opacity: 0.5;
 }

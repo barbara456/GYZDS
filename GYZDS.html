@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+    <!-- 第一幕滑动月亮界面 -->
     <div class="first">
         <!-- 背景星星 -->
         <img class="backdropstar" src="img/backdropstart.png" alt="star">
@@ -20,10 +20,9 @@
             <img class="words" src="img/words2.png" alt="words2">
             <img class="words" src="img/words3.png" alt="words3">
         </div>
-        <!-- 乐曲界面 -->
+        <!-- 第二幕乐曲界面 -->
         <div class="second" id="second">
             <!-- 未点击的乐曲 -->
-            <img src="" alt="">
             <img src="img2/musicealternatelytitle.png" class="yindao">
             <img src="img2/zhuangtaiqiusi.png" class="zhaung play">
             <img src="img2/guanglingsan.png" class="guang play">
@@ -41,6 +40,8 @@
             <audio src="music/shenrenchang.mp3" class="musiclist"></audio>
             <audio src="music/yueergao.mp3" class="musiclist"></audio>
             <audio src="music/xiaoxiangshuiyun.mp3" class="musiclist"></audio>
+
+
             <!-- 点击后的乐曲 -->
             <img src="img2/zhuangtaiqiusi-change.png" class="zhaung played" id="zahungp">
             <img src="img2/guanglingsan-change.png" class="guang played">
@@ -49,21 +50,59 @@
             <img src="img2/shenrenchang-change.png" class="shen played">
             <img src="img2/yueergao-change.png" class="yue played">
             <img src="img2/xiaoxiangshuiyun-change.png" class="xiao played">
-
+            <!-- 放飞天灯 -->
+            <div class="tiandengUnit">
+                <img src="img2/light.png" class="tiandeng">
+                <img src="img2/lightwords.png" class="tiandengwords">
+                <img src="img2/tiandenghand.png" class="tiandenghand">
+                <img src="img2/tiandenghand.png" class="tiandenghandmove">
+            </div>
         </div>
         <!-- 月亮 -->
         <div class="moonbox">
             <img id="moon" class="moon" src="img/moonbunny.png" alt="moon">
         </div>
-
         <!-- 透明月亮滑动块 -->
-
         <div class="fakemoonbutton"></div>
         <!-- 背景小山 -->
         <div class="bac-mountain">
             <img class="mountain" src="img/mountain1.png" alt="mountain">
             <img class="mountain2" src="img/mountain2.png" alt="mountain">
         </div>
+    </div>
+    <!-- 第三幕乐器 -->
+    <div class="third">
+        <div class="polarishand">
+            <img src="img3/polaris.png" class="polaris">
+            <img src="img3/clickstarthand.png" class="clickstarthand">
+        </div>
+
+        <img src="img3/start.png" class="star">
+
+        <!-- 乐器（光晕版） -->
+        <img src="img3/bianqingstart.png" class="bianqing yueqistar">
+        <img src="img3/xunstart.png" class="xun yueqistar">
+        <img src="img3/shengstart.png" class="sheng yueqistar">
+        <img src="img3/konghoustart.png" class="konghou yueqistar">
+        <img src="img3/guqinstart.png" class="guqin yueqistar">
+        <img src="img3/ruanstart.png" class="ruan yueqistar">
+        <img src="img3/dizistart.png" class="dizi yueqistar">
+        <!-- 乐器 -->
+        <img src="img3/bianqing.png" class="bianqing yueqi">
+        <img src="img3/xun.png" class="xun yueqi">
+        <img src="img3/sheng.png" class="sheng yueqi">
+        <img src="img3/konghou.png" class="konghou yueqi">
+        <img src="img3/guqin.png" class="guqin yueqi">
+        <img src="img3/ruan.png" class="ruan yueqi">
+        <img src="img3/dizi.png" class="dizi yueqi">
+
+        <audio src="music2/bianqing.mp3" class="yueQiPlayList"></audio>
+        <audio src="music2/xun.mp3" class="yueQiPlayList"></audio>
+        <audio src="music2/sheng.mp3" class="yueQiPlayList"></audio>
+        <audio src="music2/konghou.mp3" class="yueQiPlayList"></audio>
+        <audio src="music2/guqin.mp3" class="yueQiPlayList"></audio>
+        <audio src="music2/ruan.mp3" class="yueQiPlayList"></audio>
+        <audio src="music2/xiao.mp3" class="yueQiPlayList"></audio>
     </div>
 
 
