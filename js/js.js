@@ -20,6 +20,8 @@ const yueqistar = document.getElementsByClassName('yueqistar');
 const first = document.getElementsByClassName('first')[0];
 const third = document.getElementsByClassName('third')[0];
 
+let isCurrentPlay = false;
+
 
 // // console.log(yueqi);
 // console.log(yueqistar);
@@ -158,6 +160,7 @@ for (let t = 0; t < yueqi.length; t++) {
     yueqi[t].addEventListener('touchstart', function(e) {
         console.log(temp);
         if (t !== temp) {
+            console.log('点击非当前乐器');
             // 这次点击的下标与上次点击的下标进行判断。
             // 若相同，则再存，走正常流程显示，播放，改透明度
             // 若不同，则证明此时还有一个已经播放的乐器，
@@ -167,17 +170,26 @@ for (let t = 0; t < yueqi.length; t++) {
                 yueQiPlayList[p].pause();
                 yueqistar[p].style.opacity = '0.5';
             }
-
+            yueQiPlayList[t].play();
+            yueqistar[t].style.opacity = '1';
+            isCurrentPlay = false;
             // 如果第二次点击和上次点击的下标一样，即t==temp，那么意味着用户再次点击了，则暂停播放，透明度为0.5
         } else {
-            yueQiPlayList[t].pause();
-            yueqistar[t].style.opacity = '0.5';
+            console.log('点击当前乐器');
+            console.log(t);
+            isCurrentPlay = !isCurrentPlay;
+            console.log(isCurrentPlay)
+            if (isCurrentPlay) {
+                yueQiPlayList[t].play();
+                yueqistar[t].style.opacity = '1';
+            } else {
+                yueQiPlayList[t].pause();
+                yueqistar[t].style.opacity = '0.5';
+            }
         }
         temp = t;
         console.log(t);
         // 存住上一次点击的下标
-        yueQiPlayList[t].play();
-        yueqistar[t].style.opacity = '1';
         // 这就保证了不管什么时候,页面上只有一个乐器正在播放
     })
 }
