@@ -1,0 +1,87 @@
+.third {
+    width: 100vw;
+    height: 100vh;
+    background-color: #23254E;
+    display: none;
+}
+
+.polaris {
+    width: 143px;
+    height: 185px;
+    position: absolute;
+    left: 5%;
+    top: 0;
+}
+
+.clickstarthand {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    left: 9%;
+    top: 17%;
+}
+
+.star {
+    width: 85vw;
+    height: auto;
+    position: absolute;
+    top: 28%;
+    left: 8%;
+}
+
+.polarishand {
+    display: none;
+}
+
+.bianqing {
+    width: 45%;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+.xun {
+    width: 13%;
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+
+.sheng {
+    width: 25%;
+    position: absolute;
+    top: 48%;
+    right: 5%;
+}
+
+.konghou {
+    width: 19%;
+    position: absolute;
+    top: 40%;
+    left: 48%;
+}
+
+.guqin {
+    width: 9%;
+    position: absolute;
+    top: 55%;
+    left: 33%;
+}
+
+.ruan {
+    width: 20%;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+}
+
+.dizi {
+    width: 30%;
+    position: absolute;
+    bottom: 1%;
+    left: 5%;
+}
+
+.yueqistar {
+    opacity: 0.5;
+}

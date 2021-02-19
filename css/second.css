@@ -1,0 +1,118 @@
+.second {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+}
+
+.yindao {
+    max-width: 300px;
+    height: auto;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+}
+
+.zhaung {
+    max-width: 48px;
+    height: auto;
+    position: absolute;
+    top: 170px;
+    left: 100px;
+}
+
+.guang {
+    max-width: 50px;
+    height: auto;
+    position: absolute;
+    top: 150px;
+    left: 210px;
+}
+
+.ni {
+    max-width: 50px;
+    height: auto;
+    position: absolute;
+    top: 230px;
+    right: 40px;
+}
+
+.mei {
+    max-width: 50px;
+    height: auto;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+}
+
+.shen {
+    max-width: 55px;
+    height: auto;
+    position: absolute;
+    top: 320px;
+    left: 180px;
+}
+
+.yue {
+    max-width: 40px;
+    height: auto;
+    position: absolute;
+    top: 450px;
+    left: 90px;
+}
+
+.xiao {
+    max-width: 37px;
+    height: auto;
+    position: absolute;
+    top: 490px;
+    left: 200px;
+}
+
+.played {
+    display: none;
+}
+
+.play {
+    display: block;
+}
+
+.tiandengUnit {
+    /* display: block; */
+    opacity: 0;
+}
+
+.tiandeng {
+    width: 22%;
+    height: auto;
+    position: absolute;
+    right: 12%;
+    bottom: 36%;
+}
+
+.tiandengwords {
+    width: 30.1%;
+    position: absolute;
+    right: 7%;
+    bottom: 32%;
+}
+
+.tiandenghand {
+    height: 8%;
+    position: absolute;
+    right: 10%;
+    bottom: 25%;
+    z-index: 1;
+}
+
+.tiandenghandmove {
+    height: 8%;
+    position: absolute;
+    right: 10%;
+    bottom: 25%;
+    z-index: 1;
+    animation: 3s ease-out infinite tiandenghandmove;
+}

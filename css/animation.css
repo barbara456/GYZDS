@@ -1,0 +1,51 @@
+/* 动画效果 */
+
+
+/* 第二幕 */
+
+@keyframes tiandengup {
+    /* 天灯飞起动画 */
+    from {
+        transform: translateY(10%);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-180%);
+        opacity: 0;
+    }
+}
+
+@keyframes tiandenghandmove {
+    /* 天灯下的手移动动画 */
+    from {
+        transform: translateX(10%);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-180%);
+        opacity: 0;
+    }
+}
+
+
+/* 第三幕 */
+
+@keyframes secondClickToThird {
+    /* 第二幕点击天灯切换第三幕的动画 */
+    from {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes polarisHand {
+    /* 出现北极星动画 */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

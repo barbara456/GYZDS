@@ -1,0 +1,55 @@
+.fourth {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1B2A59;
+    display: none;
+    opacity: 0;
+}
+
+.fourthStar {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.endmoon {
+    z-index: 1;
+    width: 45vw;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    left: 28%;
+}
+
+.backgroundcloudleft {
+    width: 40%;
+    height: 35%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.backgroundcloudright {
+    width: 40%;
+    height: 35%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.backgroundcloudmiddle {
+    width: 100%;
+    position: absolute;
+    top: 23%;
+}
+
+.talking {
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    top: 35%;
+    left: 13%;
+}
