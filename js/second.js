@@ -5,6 +5,10 @@ const MusicList = document.querySelectorAll('.musiclist');
 const tiandengUnit = document.getElementsByClassName('tiandengUnit')[0];
 const tiandeng = document.getElementsByClassName('tiandeng')[0];
 const tiandenghandmove = document.getElementsByClassName('tiandenghandmove')[0];
+const second = document.getElementsByClassName('second')[0];
+const yindao = document.getElementsByClassName('yindao')[0];
+
+
 var temp = 7;
 
 // 播放对应乐曲，并修改对应样式，且存住本次点击的下标
@@ -55,11 +59,28 @@ for (let i = 0; i < playedMusicImgList.length; i++) {
 tiandeng.addEventListener('touchend', function(e) {
     // 为防止用户操作过快，切换到第三幕，离开第二幕的时候，要结束第二幕的所有播放，则重置第二幕所有乐曲
     // resetAllYuequ();
-    this.style.animation = 'tiandengup 1s';
+    tiandeng.style.animation = 'tiandengup 1s';
     tiandenghandmove.style.animation = 'none';
-    first.style.opacity = '0';
-    first.style.transition = "ease 3s";
-    first.style.display = 'none';
-    third.style.display = 'block';
-    third.style.animation = 'secondClickToThird 3s'
+    // 下方背景小山+第二幕的引导语+乐器+天灯模组      2s内全部逐渐消失
+    domDisappear(backgroundMountain);
+    domDisappear(yindao);
+    domDisappear(tiandengUnit);
+    // 因为乐器取dom的时候是一个数组，所以通过遍历来让他们都隐藏
+    for (let i = 0; i < playedMusicImgList.length; i++) {
+        domDisappear(playedMusicImgList[i]);
+        domDisappear(playMusicImgList[i]);
+    }
+
+    setTimeout(
+        function(e) {
+            first.style.display = 'none';
+            second.style.display = 'none';
+            third.style.display = 'block';
+            for (let i = 0; i < yueqi.length; i++) {
+                domAppear(yueqi[i]);
+            }
+        }, 3000);
+
+    // third.style.display = 'block';
+    // third.style.animation = 'secondClickToThird 3s'
 })

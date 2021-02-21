@@ -1,9 +1,10 @@
 //                          第三幕              乐器播放相关声明
+const third = document.getElementsByClassName('third')[0];
 const yueQiPlayList = document.getElementsByClassName('yueQiPlayList');
 const yueqi = document.getElementsByClassName('yueqi');
 const yueqistar = document.getElementsByClassName('yueqistar');
-const first = document.getElementsByClassName('first')[0];
-const third = document.getElementsByClassName('third')[0];
+const star = document.getElementsByClassName('star')[0];
+
 
 //    点击乐器播放逻辑
 // 当前乐曲的播放状态
@@ -72,5 +73,18 @@ const polaris = document.getElementsByClassName('polaris')[0];
 const fourth = document.getElementsByClassName('fourth')[0];
 
 polaris.addEventListener('touchstart', function(e) {
-    clickToNextPage(third, fourth);
+    // 北极星模组+乐器星光模组+背景的北极星线，3s内逐渐消失，消失后出现第四幕
+    domDisappear(polarisHand);
+    domDisappear(star);
+    // 同第二幕一样，这里的乐器和星光乐器取dom的时候都是取得数组。所以通过遍历去让他们逐渐消失
+    for (let i = 0; i < yueqi.length; i++) {
+        domDisappear(yueqi[i]);
+        domDisappear(yueqistar[i]);
+    }
+    setTimeout(
+        function(e) {
+            third.style.display = 'none';
+            fourth.style.display = 'block';
+        }, 3000
+    );
 })

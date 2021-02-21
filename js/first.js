@@ -3,7 +3,9 @@ const fakemoonbutton = document.getElementsByClassName('fakemoonbutton')[0];
 const moonbox = document.getElementsByClassName('moonbox')[0];
 const moon = document.getElementsByClassName('moon')[0];
 const textTips = document.getElementsByClassName('text-tips')[0];
-const second = document.getElementById('second');
+const backgroundMountain = document.getElementsByClassName('bac-mountain')[0];
+const first = document.getElementsByClassName('first')[0];
+
 
 //                                          第一幕      月亮滑动逻辑
 
@@ -46,11 +48,9 @@ fakemoonbutton.addEventListener('touchend', function(e) {
         // 这就过了1s了。效果是，月亮和提示语完全从页面消失
         // 这个时候就该出现第二幕
         moonbox.style.top = 0 + 'px';
-        moonbox.style.transition = "ease 1s"
-        moon.style.opacity = 0;
-        moon.style.transition = "ease 1s"
-        textTips.style.opacity = 0;
-        textTips.style.transition = "ease 1s";
+        moonbox.style.transition = "ease 1s";
+        domDisappear(moon);
+        domDisappear(textTips);
         // ？？？需要思考！！！
         second.style.display = 'block';
 
@@ -59,11 +59,7 @@ fakemoonbutton.addEventListener('touchend', function(e) {
             textTips.style.display = 'none';
             moonbox.style.display = 'none';
             fakemoonbutton.style.display = 'none';
-            // second.style.display = 'block';
-            // 规定渐变的动画属性为opacity
-            // second.style.transitionProperty = 'opaciy';
-            second.style.opacity = 1;
-            second.style.transition = "ease 2s";
+            domAppear(second);
         }, 1000);
     }
     moonbox.style.transition = "ease 3s";

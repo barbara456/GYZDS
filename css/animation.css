@@ -1,6 +1,18 @@
 /* 动画效果 */
 
 
+/* 公用 */
+
+@keyframes domAppear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 /* 第二幕 */
 
 @keyframes tiandengup {
