@@ -72,5 +72,5 @@ const polaris = document.getElementsByClassName('polaris')[0];
 const fourth = document.getElementsByClassName('fourth')[0];
 
 polaris.addEventListener('touchstart', function(e) {
-    clockToNextPage(third, fourth);
+    clickToNextPage(third, fourth);
 })
