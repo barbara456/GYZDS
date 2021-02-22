@@ -71,11 +71,15 @@ for (let i = 0; i < yueqi.length; i++) {
 // 点击北极星，进入下一页
 const polaris = document.getElementsByClassName('polaris')[0];
 const fourth = document.getElementsByClassName('fourth')[0];
+const thethirdyindaoyu = document.getElementsByClassName('thethirdyindaoyu')[0];
 
 polaris.addEventListener('touchstart', function(e) {
-    // 北极星模组+乐器星光模组+背景的北极星线，3s内逐渐消失，消失后出现第四幕
+    // 北极星模组+乐器星光模组+背景的北极星线+上方引导语，3s内逐渐消失，消失后出现第四幕
     domDisappear(polarisHand);
     domDisappear(star);
+    domDisappear(thethirdyindaoyu);
+    // 为了防止用户快速操作的时候，出现进入下一页面后，上一页面的音乐还在播放的情况，进入下一页面时，遍历暂停所有音乐
+    resetAllInstrument();
     // 同第二幕一样，这里的乐器和星光乐器取dom的时候都是取得数组。所以通过遍历去让他们逐渐消失
     for (let i = 0; i < yueqi.length; i++) {
         domDisappear(yueqi[i]);

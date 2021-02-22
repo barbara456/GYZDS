@@ -17,59 +17,52 @@
 }
 
 .zhaung {
-    max-width: 48px;
-    height: auto;
+    width: 35%;
     position: absolute;
-    top: 170px;
-    left: 100px;
+    top: 17%;
+    left: 9%;
 }
 
 .guang {
-    max-width: 50px;
-    height: auto;
+    width: 40%;
     position: absolute;
-    top: 150px;
-    left: 210px;
+    top: 16%;
+    left: 40%;
 }
 
 .ni {
-    max-width: 50px;
-    height: auto;
+    width: 40%;
     position: absolute;
-    top: 230px;
-    right: 40px;
+    top: 30%;
+    right: 2%;
 }
 
 .mei {
-    max-width: 50px;
-    height: auto;
+    width: 40%;
     position: absolute;
-    top: 300px;
-    left: 50px;
+    top: 40%;
+    left: 2%;
 }
 
 .shen {
-    max-width: 55px;
-    height: auto;
+    width: 40%;
     position: absolute;
-    top: 320px;
-    left: 180px;
+    top: 40%;
+    left: 40%;
 }
 
 .yue {
-    max-width: 40px;
-    height: auto;
+    width: 35%;
     position: absolute;
-    top: 450px;
-    left: 90px;
+    top: 55%;
+    left: 10%;
 }
 
 .xiao {
-    max-width: 37px;
-    height: auto;
+    width: 35%;
     position: absolute;
-    top: 490px;
-    left: 200px;
+    top: 60%;
+    left: 30%;
 }
 
 .played {

@@ -65,6 +65,10 @@ tiandeng.addEventListener('touchend', function(e) {
     domDisappear(backgroundMountain);
     domDisappear(yindao);
     domDisappear(tiandengUnit);
+    // 为了防止用户快速操作的时候，出现进入下一页面后，上一页面的音乐还在播放的情况，进入下一页面时，遍历暂停所有音乐
+    for (let p = 0; p < MusicList.length; p++) {
+        MusicList[p].pause();
+    };
     // 因为乐器取dom的时候是一个数组，所以通过遍历来让他们都隐藏
     for (let i = 0; i < playedMusicImgList.length; i++) {
         domDisappear(playedMusicImgList[i]);
